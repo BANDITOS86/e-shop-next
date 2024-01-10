@@ -23,7 +23,7 @@ const ProductImage = ({ product, fill }: Props) => {
           }`}
           alt={product.title}
           fill
-          onLoadingComplete={() => setLoading(false)}
+          onLoad = {() => setLoading(false)}
         />
       ) : (
         <Image
@@ -36,7 +36,7 @@ const ProductImage = ({ product, fill }: Props) => {
           alt={product.title}
           width={400}
           height={1000}
-          onLoadingComplete={() => setLoading(false)}
+          onLoad = {() => setLoading(false)}
         />
       )}
     </>
